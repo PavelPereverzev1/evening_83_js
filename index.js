@@ -11,24 +11,24 @@
   - Перебір for...in
 */
 
-const isMale = true;
+// const isMale = true;
 
-const user1 = {
-  eyeColor: "green",
-  hairColor: "brown",
-  isMale,
-  // height: 181,
-  // address: {
-  //   country: "Ukraine",
-  // },
-  // friends: ["Anya", "Sofiya", "Vasyl"],
-  // isMale: true,
-};
+// const user1 = {
+//   eyeColor: "green",
+//   hairColor: "brown",
+//   isMale,
+// height: 181,
+// address: {
+//   country: "Ukraine",
+// },
+// friends: ["Anya", "Sofiya", "Vasyl"],
+// isMale: true,
+// };
 
-const user2 = user1;
+// const user2 = user1;
 
-console.log(user1);
-console.log(user2);
+// console.log(user1);
+// console.log(user2);
 
 // console.log(user1 === user2);
 
