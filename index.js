@@ -11,24 +11,24 @@
   - Перебір for...in
 */
 
-// const isMale = true;
+const isMale = true;
 
-// const user1 = {
-//   eyeColor: "green",
-//   hairColor: "brown",
-//   isMale,
-//   // height: 181,
-//   // adress: {
-//   //   country: "Ukraine",
-//   // },
-//   // friends: ["Anya", "Sofiya", "Vasyl"],
-//   // isMale: true,
-// };
+const user1 = {
+  eyeColor: "green",
+  hairColor: "brown",
+  isMale,
+  // height: 181,
+  // address: {
+  //   country: "Ukraine",
+  // },
+  // friends: ["Anya", "Sofiya", "Vasyl"],
+  // isMale: true,
+};
 
-// const user2 = user1;
+const user2 = user1;
 
-// console.log(user1);
-// console.log(user2);
+console.log(user1);
+console.log(user2);
 
 // console.log(user1 === user2);
 
@@ -52,7 +52,7 @@
 
 // user.height = 200;
 
-// const key = "heig";
+// const key = "height";
 
 // user[key + "ht"] = 180;
 
@@ -173,44 +173,44 @@
 
 // Типів транзакцій лише два:
 // Можна покласти чи зняти гроші з балансу
-const Transaction = {
-  DEPOSIT: "deposit",
-  WITHDRAW: "withdraw",
-};
-
-const account1 = {
-  // Поточний баланс
-  balance: 0,
-
-  // Исторія транзакцій
-  transactions: [],
-
-  createTransaction(amount, type) {
-    return { amount, type, id: Math.random() };
-  },
-
-  deposit(amount) {
-    this.balance += amount;
-
-    const newTransaction = this.createTransaction(amount, Transaction.DEPOSIT);
-
-    this.transactions.push(newTransaction);
-  },
-
-  withdraw(amount) {
-    if (amount > this.balance) {
-      console.log(`Зняття суми ${amount} не можливе - недостатньо коштів`);
-
-      return;
-    }
-
-    this.balance -= amount;
-
-    const newTransaction = this.createTransaction(amount, Transaction.WITHDRAW);
-
-    this.transactions.push(newTransaction);
-  },
-};
+// const Transaction = {
+//   DEPOSIT: "deposit",
+//   WITHDRAW: "withdraw",
+// };
+//
+// const account1 = {
+//   // Поточний баланс
+//   balance: 0,
+//
+//   // Исторія транзакцій
+//   transactions: [],
+//
+//   createTransaction(amount, type) {
+//     return { amount, type, id: Math.random() };
+//   },
+//
+//   deposit(amount) {
+//     this.balance += amount;
+//
+//     const newTransaction = this.createTransaction(amount, Transaction.DEPOSIT);
+//
+//     this.transactions.push(newTransaction);
+//   },
+//
+//   withdraw(amount) {
+//     if (amount > this.balance) {
+//       console.log(`Зняття суми ${amount} не можливе - недостатньо коштів`);
+//
+//       return;
+//     }
+//
+//     this.balance -= amount;
+//
+//     const newTransaction = this.createTransaction(amount, Transaction.WITHDRAW);
+//
+//     this.transactions.push(newTransaction);
+//   },
+// };
 
 // console.log(account);
 
